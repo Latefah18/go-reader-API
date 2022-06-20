@@ -1,1 +1,1 @@
-# go-reader-API
+# goreader-API
