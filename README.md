@@ -2,15 +2,18 @@
 
 
 ## Features
-1. create Acoount
-2. login
-3. add book
-4. Delete book
-5. add coment/rivew
-6. view all books
-7. Search book by id
-8. rating of books
-9. sort books
+1. create account
+2. delete acount
+3. uodate acount
+4. login
+5. add book
+6. Delete book
+7. update book
+8. add coment/rivew
+9. view all books
+10. Search book by id
+11. rating of books
+12. sort books
 
 ## Stack
 1. Runtime Environment: `Node.js`
