@@ -1,4 +1,4 @@
-# goreader-API
+# GoReader-API
 
 
 ## Features
