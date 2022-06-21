@@ -28,6 +28,6 @@
 3. Validation
 4. No Supabase
 5. Deployed to AWS or Heroku
-
+#
 
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/174722941-0b64e1af-dc63-48d7-9f59-3dba5a3ad89b.png)
