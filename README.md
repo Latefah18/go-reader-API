@@ -17,7 +17,7 @@
 
 ## Stack
 1. Runtime Environment: `Node.js`
-2. Language: `javaScript`
+2. Language: `typeScript`
 3. Web Server: `Fastify`
 4. ORM: `Prisma`
 5. DB: `mongodb`
