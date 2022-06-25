@@ -1,5 +1,9 @@
 # GoReader-API
 
+## Description
+
+GoReader is a book review website provides a summary of the content ,alow users to share their experiance and opinion of a book, and recommends it or not to other potential readers
+
 
 ## Features
 1. create account
@@ -30,5 +34,5 @@
 5. Deployed to AWS or Heroku
 #
 
-   ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/175787538-56c1a386-66e7-4c0b-8bf2-0bf9b241b99f.png)
+   ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/175787674-7f85e247-67b5-4585-a281-8695444b74e6.png)
 
