@@ -20,21 +20,22 @@ GoReader is a book review website provides a summary of the content ,alow users 
 ### User
 1. create account
 2. update user info
-2. login by username and password.
-3. add friend to friend list 
-4. delete friend from friend list 
-5. add rivew and rate(fom scale 1 to 5) 
-6. delete rivew and rate 
-7. view all rivew and rate of other user
-8. view all books
-9. Search book by name 
-10. add book read state
-11. update book read state
-12. delete book read state
-13. add book to (want to read) collection 
-14. delete  book fron (want to read) collection 
-15. add book to (favorite) collection 
-16. delete book from (favorite) collection 
+3. delete account
+4. login by username and password.
+5. add friend to friend list 
+6. delete friend from friend list 
+7. add rivew and rate(fom scale 1 to 5) 
+8. delete rivew and rate 
+9. view all rivew and rate of other user
+10. view all books
+11. Search book by name 
+12. add book read state
+13. update book read state
+14. delete book read state
+15. add book to (want to read) collection 
+16. delete  book fron (want to read) collection 
+17. add book to (favorite) collection 
+18. delete book from (favorite) collection 
 
 
 
