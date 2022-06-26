@@ -36,6 +36,11 @@ GoReader is a book review website provides a summary of the content ,alow users 
 16. delete  book fron (want to read) collection 
 17. add book to (favorite) collection 
 18. delete book from (favorite) collection 
+19. add quotes
+20. update quotes
+21. delete quotes
+22. view all quotes
+
 
 
 
@@ -48,7 +53,6 @@ GoReader is a book review website provides a summary of the content ,alow users 
 
 
 #
+   ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/175805871-e7a7588d-c5ba-4ee0-a509-d1a367fb4e81.png)
 
-
-   ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/175789262-caa2bc08-7781-45ba-b392-af79d2257c80.png)
 
