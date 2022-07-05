@@ -1,0 +1,113 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  user_id  String     @id @default(auto()) @map("_id") @db.ObjectId
+  password String
+  email    String
+  username String
+  fav      Favourite[]
+  Wantread Wantread[]
+  Friend   Friend[]
+  Rivew    Rivew[]
+  Quotes   Quotes[]
+  Book     Book[]
+
+  @@map("users")
+}
+
+model Book {
+  book_id     String  @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  type        String
+  author      String
+  pages       String
+  cost        String
+  description String
+  Rivew       Rivew[]
+
+
+
+  Favourite             Favourite? @relation(fields: [favouriteFavourite_id], references: [favourite_id])
+  favouriteFavourite_id String?    @db.ObjectId
+  Wantread              Wantread?  @relation(fields: [wantreadWantread_id], references: [Wantread_id])
+  wantreadWantread_id   String?    @db.ObjectId
+  Readstate             Readstate? @relation(fields: [readstateReadstate_id], references: [readstate_id])
+  readstateReadstate_id String?    @db.ObjectId
+  User                  User?      @relation(fields: [userUser_id], references: [user_id])
+  userUser_id           String?    @db.ObjectId
+  @@map("books")
+}
+
+model Favourite {
+  favourite_id String @id @default(auto()) @map("_id") @db.ObjectId
+  book         Book[]
+
+  User        User?   @relation(fields: [userUser_id], references: [user_id])
+  userUser_id String? @db.ObjectId
+  @@map("favourites")
+}
+
+model Wantread {
+  Wantread_id String @id @default(auto()) @map("_id") @db.ObjectId
+  book        Book[]
+
+
+  User        User?   @relation(fields: [userUser_id], references: [user_id])
+  userUser_id String? @db.ObjectId
+  @@map("wantreads")
+}
+
+model Readstate {
+  readstate_id String @id @default(auto()) @map("_id") @db.ObjectId
+  book         Book[]
+  state        String
+
+  @@map("readstates")
+}
+
+
+
+model Friend {
+  friend_id String @id @default(auto()) @map("_id") @db.ObjectId
+
+
+
+
+  User        User?   @relation(fields: [userUser_id], references: [user_id])
+  userUser_id String? @db.ObjectId
+  @@map("friends")
+}
+
+model Rivew {
+  rivews_id String @id @default(auto()) @map("_id") @db.ObjectId
+  comment   String
+  rating    Float
+
+
+
+  User        User?   @relation(fields: [userUser_id], references: [user_id])
+  userUser_id String? @db.ObjectId
+  Book        Book?   @relation(fields: [bookBook_id], references: [book_id])
+  bookBook_id String? @db.ObjectId
+  @@map("rivews")
+}
+
+model Quotes {
+  quotes_id String @id @default(auto()) @map("_id") @db.ObjectId
+  comment   String
+
+
+  User        User?   @relation(fields: [userUser_id], references: [user_id])
+  userUser_id String? @db.ObjectId
+  @@map("Quotess")
+}
