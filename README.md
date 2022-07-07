@@ -49,7 +49,7 @@ GoReader is a book review website provides a summary of the content ,alow users 
 5. DB: `mongodb`
 
 ##heroku deploy link
-#
+
 https://goreader.herokuapp.com/docs
 
 
