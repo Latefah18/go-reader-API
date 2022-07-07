@@ -48,6 +48,9 @@ GoReader is a book review website provides a summary of the content ,alow users 
 4. ORM: `mongoose`
 5. DB: `mongodb`
 
+#heroku deploy link
+https://goreader.herokuapp.com/docs
+
 
 #
    ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106754794/177561401-3d42dfa4-501b-4162-b206-c1d907649bf3.png)
